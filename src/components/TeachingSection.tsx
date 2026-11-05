@@ -35,7 +35,7 @@ export const TeachingSection: React.FC<TeachingSectionProps> = ({ onSelectBookin
   ];
 
   return (
-    <section id="docencia" className="py-16 md:py-24 bg-[#FAF6F0]">
+    <section id="docencia" className="py-20 md:py-28 bg-[#FAF6F0] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
         {/* Section Header */}
@@ -71,7 +71,7 @@ export const TeachingSection: React.FC<TeachingSectionProps> = ({ onSelectBookin
         </div>
 
         {/* Feature Banner with Environment Image */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white rounded-3xl p-6 sm:p-8 border border-[#2A2833]/8 shadow-sm overflow-hidden">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white rounded-[2rem] p-6 sm:p-8 border border-white shadow-lift overflow-hidden relative">
           
           <div className="lg:col-span-6 space-y-5">
             <span className="text-xs font-semibold text-[#5A4A7F] uppercase tracking-wider">
@@ -126,7 +126,7 @@ export const TeachingSection: React.FC<TeachingSectionProps> = ({ onSelectBookin
             return (
               <div
                 key={idx}
-                className="bg-white rounded-2xl p-6 border border-[#2A2833]/8 shadow-xs flex flex-col justify-between hover:border-[#3F6B58]/40 transition-colors"
+                className="bg-white rounded-2xl p-6 border border-[#2A2833]/8 shadow-sm flex flex-col justify-between hover:border-[#3F6B58]/40 hover:-translate-y-1 hover:shadow-lift transition-all"
               >
                 <div className="space-y-4">
                   <div className="w-12 h-12 rounded-xl bg-[#DCEAE2]/60 text-[#3F6B58] flex items-center justify-center">

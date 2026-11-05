@@ -84,7 +84,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
   const whatsappUrl = `https://wa.me/34600000000?text=${whatsappText}`;
 
   return (
-    <section id="contacto" className="py-16 md:py-24 bg-[#F1EAE0]/40 border-t border-[#2A2833]/8">
+    <section id="contacto" className="py-20 md:py-28 bg-[#F1EAE0]/70 border-t border-[#2A2833]/8 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
         
         {/* Section Header */}
@@ -109,8 +109,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
           <div className="lg:col-span-5 space-y-6">
             
             {/* Direct Cards */}
-            <div className="bg-white rounded-3xl p-6 sm:p-7 border border-[#2A2833]/10 shadow-xs space-y-6">
-              <h3 className="font-serif-title text-2xl font-bold text-[#2A2833]">
+            <div className="bg-[#2A2833] text-white rounded-[2rem] p-6 sm:p-7 border border-white/10 shadow-lift-lg space-y-6">
+              <h3 className="font-serif-title text-2xl font-bold text-white">
                 Canales de Comunicación
               </h3>
 
@@ -195,7 +195,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
           {/* Right Column: Interactive Form (7 cols) */}
           <div className="lg:col-span-7">
-            <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[#2A2833]/10 shadow-sm relative">
+            <div className="bg-white rounded-[2rem] p-6 sm:p-8 border border-white shadow-lift relative">
               
               {submitted ? (
                 <div className="py-12 px-4 text-center space-y-4">

@@ -10,7 +10,7 @@ export const FaqSection: React.FC = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-[#FAF6F0] border-t border-[#2A2833]/8">
+    <section className="py-20 md:py-28 bg-[#FAF6F0] border-t border-[#2A2833]/8">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
         {/* Header */}
@@ -34,7 +34,7 @@ export const FaqSection: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="bg-white rounded-2xl border border-[#2A2833]/10 overflow-hidden transition-all shadow-2xs"
+                className="bg-white/90 rounded-2xl border border-[#2A2833]/10 overflow-hidden transition-all shadow-sm hover:shadow-lift hover:border-[#5A4A7F]/25"
               >
                 <button
                   onClick={() => toggle(idx)}

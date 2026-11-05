@@ -50,10 +50,10 @@ export const CounselingSection: React.FC<CounselingSectionProps> = ({ onSelectBo
   ];
 
   return (
-    <section id="orientacion" className="py-16 md:py-24 bg-gradient-to-b from-[#FAF6F0] via-[#E7E0F4]/30 to-[#FAF6F0] border-t border-[#2A2833]/8 relative overflow-hidden">
+    <section id="orientacion" className="py-20 md:py-28 bg-gradient-to-br from-[#2A2833] via-[#3d3153] to-[#5A4A7F] text-[#FAF6F0] border-t border-[#2A2833]/8 relative overflow-hidden">
       
       {/* Ambient background blur */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-96 bg-[#E7E0F4]/40 blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-96 bg-[#bca4e9]/20 blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
         
@@ -65,10 +65,10 @@ export const CounselingSection: React.FC<CounselingSectionProps> = ({ onSelectBo
               <span aria-hidden="true">·</span>
               <span>Orientación de la Conducta & Acompañamiento Personal</span>
             </div>
-            <h2 className="font-serif-title text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2A2833] tracking-tight text-balance">
+            <h2 className="font-serif-title text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight text-balance">
               Un espacio cálido y seguro para comprenderte, ordenar tus prioridades y avanzar
             </h2>
-            <p className="text-[#2A2833]/80 text-base sm:text-lg leading-relaxed">
+            <p className="text-white/75 text-base sm:text-lg leading-relaxed">
               Basado en mi formación de <strong>Magíster en Ciencias, mención Orientación de la Conducta</strong> (C.I.P.P.S.V., Caracas, 2009), ofrezco un acompañamiento humano y estructurado enfocado en potenciar tus recursos personales y encontrar claridad en momentos de cambio.
             </p>
           </div>
@@ -90,7 +90,7 @@ export const CounselingSection: React.FC<CounselingSectionProps> = ({ onSelectBo
         </div>
 
         {/* Hero split with counseling room environment */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white rounded-3xl p-6 sm:p-8 border border-[#5A4A7F]/15 shadow-sm">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white/95 text-[#2A2833] rounded-[2rem] p-6 sm:p-8 border border-white/20 shadow-lift-lg">
           
           <div className="lg:col-span-6 relative aspect-16/10 rounded-2xl overflow-hidden border border-[#2A2833]/10 order-2 lg:order-1">
             <img
@@ -143,10 +143,10 @@ export const CounselingSection: React.FC<CounselingSectionProps> = ({ onSelectBo
         {/* 8 Areas Bento Grid */}
         <div className="space-y-4">
           <div className="flex items-center justify-between">
-            <h3 className="font-serif-title text-2xl font-bold text-[#2A2833]">
+            <h3 className="font-serif-title text-2xl font-bold text-white">
               Áreas de Intervención y Acompañamiento
             </h3>
-            <span className="text-xs text-[#2A2833]/60">Sesiones adaptadas a cada necesidad</span>
+            <span className="text-xs text-white/60">Sesiones adaptadas a cada necesidad</span>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -155,7 +155,7 @@ export const CounselingSection: React.FC<CounselingSectionProps> = ({ onSelectBo
               return (
                 <div
                   key={idx}
-                  className="bg-white rounded-2xl p-5 border border-[#2A2833]/8 shadow-xs flex flex-col justify-between hover:border-[#5A4A7F]/40 transition-all hover:-translate-y-0.5"
+                  className="bg-white/95 text-[#2A2833] rounded-2xl p-5 border border-white/15 shadow-sm flex flex-col justify-between hover:border-[#E7E0F4] transition-all hover:-translate-y-1 hover:shadow-lift"
                 >
                   <div className="space-y-3">
                     <div className="w-10 h-10 rounded-xl bg-[#E7E0F4] text-[#5A4A7F] flex items-center justify-center">

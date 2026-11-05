@@ -8,7 +8,8 @@ interface AboutSectionProps {
 
 export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenCv }) => {
   return (
-    <section id="sobre-mi" className="py-16 md:py-24 bg-[#F1EAE0]/40 border-y border-[#2A2833]/8">
+    <section id="sobre-mi" className="py-20 md:py-28 bg-[#F1EAE0]/55 border-y border-[#2A2833]/8 relative overflow-hidden">
+      <div className="absolute -right-28 top-24 w-80 h-80 rounded-full border-[32px] border-white/50 pointer-events-none" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         
         {/* Section Header */}
@@ -40,7 +41,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenCv }) => {
             {EXPERIENCE_LIST.map((exp) => (
               <div
                 key={exp.id}
-                className="bg-white rounded-2xl p-6 border border-[#2A2833]/8 shadow-xs flex flex-col justify-between hover:border-[#5A4A7F]/40 transition-colors"
+                className="bg-white/90 rounded-2xl p-6 border border-white shadow-sm flex flex-col justify-between hover:border-[#5A4A7F]/40 hover:-translate-y-1 hover:shadow-lift transition-all"
               >
                 <div className="space-y-3">
                   <div className="flex items-center justify-between text-xs text-[#3F6B58] font-semibold">
@@ -92,7 +93,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenCv }) => {
               {EDUCATION_LIST.map((edu, idx) => (
                 <div
                   key={idx}
-                  className="bg-white rounded-2xl p-6 border border-[#2A2833]/8 shadow-xs space-y-2 relative"
+                  className="bg-white/90 rounded-2xl p-6 border border-white shadow-sm space-y-2 relative hover:-translate-y-1 hover:shadow-lift transition-all"
                 >
                   <div className="flex items-center justify-between text-xs text-[#5A4A7F] font-semibold">
                     <span>{edu.institution}</span>
@@ -140,7 +141,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenCv }) => {
             </h3>
 
             {/* Competencies list */}
-            <div className="bg-white rounded-2xl p-6 border border-[#2A2833]/8 shadow-xs space-y-3">
+            <div className="bg-white/90 rounded-2xl p-6 border border-white shadow-sm space-y-3 hover:-translate-y-1 hover:shadow-lift transition-all">
               <span className="text-xs font-semibold text-[#2A2833]/60 uppercase tracking-wider block">
                 Habilidades profesionales clave
               </span>
@@ -155,7 +156,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenCv }) => {
             </div>
 
             {/* Languages */}
-            <div className="bg-white rounded-2xl p-6 border border-[#2A2833]/8 shadow-xs space-y-3">
+            <div className="bg-white/90 rounded-2xl p-6 border border-white shadow-sm space-y-3 hover:-translate-y-1 hover:shadow-lift transition-all">
               <span className="text-xs font-semibold text-[#2A2833]/60 uppercase tracking-wider block">
                 Competencia lingüística
               </span>

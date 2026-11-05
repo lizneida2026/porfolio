@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Settings, Sparkles } from 'lucide-react';
+import { Menu, X, Settings, Sparkles, ArrowUpRight } from 'lucide-react';
 
 interface HeaderProps {
   onOpenAdmin: () => void;
@@ -28,9 +28,9 @@ export const Header: React.FC<HeaderProps> = ({ onOpenAdmin, onOpenCv, onSelectB
   };
 
   return (
-    <header className="sticky top-0 z-40 bg-[#FAF6F0]/95 backdrop-blur-md border-b border-[#2A2833]/8 transition-all">
+    <header className="sticky top-0 z-40 bg-[#FAF6F0]/80 backdrop-blur-xl border-b border-white/70 transition-all">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between gap-8 h-20">
+        <div className="flex items-center justify-between gap-6 h-[4.5rem]">
           {/* Zone 1: Brand Wordmark (Single text element, no clutter) */}
           <a
             href="#inicio"
@@ -38,13 +38,16 @@ export const Header: React.FC<HeaderProps> = ({ onOpenAdmin, onOpenCv, onSelectB
               e.preventDefault();
               handleNavClick('#inicio');
             }}
-            className="group flex flex-col items-start whitespace-nowrap shrink-0"
+            className="group flex items-center gap-2.5 whitespace-nowrap shrink-0"
           >
+            <span className="w-9 h-9 rounded-xl bg-[#5A4A7F] text-white flex items-center justify-center font-serif-title text-xl font-bold shadow-sm">LC</span>
+            <span className="flex flex-col items-start">
             <span className="font-serif-title text-2xl sm:text-3xl font-semibold tracking-tight text-[#2A2833] group-hover:text-[#5A4A7F] transition-colors">
               Lizneida Cordero
             </span>
             <span className="text-[11px] font-medium tracking-wider uppercase text-[#3F6B58] -mt-1 hidden sm:block">
               Educación & Orientación
+            </span>
             </span>
           </a>
 
@@ -76,10 +79,11 @@ export const Header: React.FC<HeaderProps> = ({ onOpenAdmin, onOpenCv, onSelectB
           <div className="flex items-center gap-3 shrink-0">
             <button
               onClick={() => onSelectBooking('sesion-informativa')}
-              className="px-4 py-2.5 text-xs sm:text-sm font-medium text-white bg-[#5A4A7F] hover:bg-[#483968] active:scale-[0.98] rounded-xl shadow-xs transition-all whitespace-nowrap shrink-0 flex items-center gap-1.5"
+              className="px-4 py-2.5 text-xs sm:text-sm font-semibold text-white bg-[#5A4A7F] hover:bg-[#483968] active:scale-[0.98] rounded-xl shadow-sm transition-all whitespace-nowrap shrink-0 flex items-center gap-1.5"
             >
               <Sparkles className="w-3.5 h-3.5 text-[#E7E0F4]" />
               <span>1ª Sesión (15 min)</span>
+              <ArrowUpRight className="w-3.5 h-3.5" />
             </button>
 
             <button

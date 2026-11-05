@@ -18,7 +18,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ rates, onSelectB
   const estimatedTotal = unitPrice * calcQty;
 
   return (
-    <section id="tarifas" className="py-16 md:py-24 bg-[#FAF6F0] border-t border-[#2A2833]/8">
+    <section id="tarifas" className="py-20 md:py-28 bg-[#FAF6F0] border-t border-[#2A2833]/8 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
         
         {/* Section Header */}
@@ -61,7 +61,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ rates, onSelectB
                 className={`rounded-3xl p-6 sm:p-7 flex flex-col justify-between transition-all relative border ${
                   rate.featured
                     ? 'bg-white border-[#5A4A7F]/30 shadow-md ring-1 ring-[#5A4A7F]/10'
-                    : 'bg-white/80 border-[#2A2833]/10 shadow-xs hover:border-[#2A2833]/20'
+                  : 'bg-white/85 border-[#2A2833]/10 shadow-sm hover:border-[#5A4A7F]/30 hover:-translate-y-1 hover:shadow-lift'
                 }`}
               >
                 {/* Free / Highlight Badge */}

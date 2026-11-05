@@ -17,36 +17,36 @@ export const Hero: React.FC<HeroProps> = ({ profilePhotoUrl, onOpenAdmin, onSele
   };
 
   return (
-    <section id="inicio" className="relative pt-8 pb-16 md:pt-14 md:pb-24 overflow-hidden">
+    <section id="inicio" className="relative pt-6 pb-14 md:pt-12 md:pb-24 overflow-hidden">
       {/* Background ambient accents */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-[#E7E0F4]/40 rounded-full blur-3xl -z-10 translate-x-1/3 -translate-y-1/3 pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#DCEAE2]/40 rounded-full blur-3xl -z-10 -translate-x-1/3 translate-y-1/3 pointer-events-none" />
+      <div className="absolute top-8 right-0 w-[32rem] h-[32rem] bg-[#E7E0F4]/55 rounded-full blur-3xl -z-10 translate-x-1/3 -translate-y-1/3 pointer-events-none animate-float-slow" />
+      <div className="absolute bottom-0 left-0 w-[28rem] h-[28rem] bg-[#DCEAE2]/60 rounded-full blur-3xl -z-10 -translate-x-1/3 translate-y-1/3 pointer-events-none animate-float" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
           
           {/* Left Column: Text & Content (7 cols) */}
           <div className="lg:col-span-7 space-y-6">
             
             {/* Location & Trust Signals (clean unboxed text with · separators) */}
-            <div className="flex items-center gap-2 text-xs sm:text-sm font-medium text-[#3F6B58]">
+            <div className="inline-flex items-center gap-2 text-[11px] sm:text-xs font-bold uppercase tracking-[.16em] text-[#3F6B58] bg-white/70 border border-[#3F6B58]/15 rounded-full px-3.5 py-2 shadow-xs">
               <span className="flex items-center gap-1">
                 <MapPin className="w-3.5 h-3.5" />
                 <span>{PROFESSIONAL_IDENTITY.location}</span>
               </span>
-              <span aria-hidden="true">·</span>
+              <span aria-hidden="true" className="text-[#5A4A7F]">·</span>
               <span>Online & Presencial</span>
               <span aria-hidden="true">·</span>
               <span>Atención personalizada</span>
             </div>
 
             {/* Main Headline */}
-            <div className="space-y-3">
+            <div className="space-y-4">
               <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#5A4A7F]">
                 {PROFESSIONAL_IDENTITY.mainHeadline}
               </span>
-              <h1 className="font-serif-title text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#2A2833] leading-[1.1] text-balance">
-                Lizneida Cordero
+              <h1 className="font-serif-title text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-[#2A2833] leading-[.96] text-balance">
+                Educar con claridad.<br /><span className="text-[#5A4A7F] italic">Acompañar con propósito.</span>
               </h1>
               <p className="text-base sm:text-lg font-medium text-[#5A4A7F] leading-snug">
                 {PROFESSIONAL_IDENTITY.rolesSubtitle}
@@ -54,12 +54,12 @@ export const Hero: React.FC<HeroProps> = ({ profilePhotoUrl, onOpenAdmin, onSele
             </div>
 
             {/* Motto */}
-            <p className="font-serif-title text-xl sm:text-2xl italic text-[#3F6B58] border-l-0 pl-0">
+            <p className="font-serif-title text-xl sm:text-2xl italic text-[#3F6B58] border-l-2 border-[#3F6B58]/40 pl-4 max-w-xl">
               {PROFESSIONAL_IDENTITY.motto}
             </p>
 
             {/* Presentation Quote (Exact as required) */}
-            <div className="bg-[#FFFFFF]/80 backdrop-blur-xs border border-[#2A2833]/10 rounded-2xl p-6 shadow-xs relative">
+            <div className="bg-white/75 backdrop-blur-sm border border-white/80 rounded-2xl p-6 shadow-lift relative max-w-2xl">
               <p className="text-[#2A2833]/90 text-base sm:text-lg leading-relaxed italic">
                 {PROFESSIONAL_IDENTITY.presentationQuote}
               </p>
@@ -89,16 +89,16 @@ export const Hero: React.FC<HeroProps> = ({ profilePhotoUrl, onOpenAdmin, onSele
             </div>
 
             {/* Micro Pillars Strip */}
-            <div className="pt-4 grid grid-cols-2 sm:grid-cols-3 gap-4 text-xs text-[#2A2833]/80">
-              <div className="bg-white/60 p-3 rounded-xl border border-[#2A2833]/5">
+            <div className="pt-4 grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs text-[#2A2833]/80">
+              <div className="bg-white/70 p-4 rounded-2xl border border-white/80 shadow-xs">
                 <span className="font-semibold text-[#5A4A7F] block text-sm">Docencia Matemática</span>
                 Primaria, secundaria y refuerzo lógico paso a paso.
               </div>
-              <div className="bg-white/60 p-3 rounded-xl border border-[#2A2833]/5">
+              <div className="bg-white/70 p-4 rounded-2xl border border-white/80 shadow-xs">
                 <span className="font-semibold text-[#3F6B58] block text-sm">Orientación Conductual</span>
                 Magíster acreditada: crecimiento, hábitos y adaptación.
               </div>
-              <div className="bg-white/60 p-3 rounded-xl border border-[#2A2833]/5 col-span-2 sm:col-span-1">
+              <div className="bg-white/70 p-4 rounded-2xl border border-white/80 shadow-xs col-span-2 sm:col-span-1">
                 <span className="font-semibold text-[#2A2833] block text-sm">1ª Charla de 15 min</span>
                 Informativa y sin coste para valorar tu necesidad.
               </div>
@@ -108,11 +108,12 @@ export const Hero: React.FC<HeroProps> = ({ profilePhotoUrl, onOpenAdmin, onSele
 
           {/* Right Column: Portrait Card Reserved Space (5 cols) */}
           <div className="lg:col-span-5 flex justify-center">
-            <div className="w-full max-w-md">
-              <div className="bg-white p-4 sm:p-5 rounded-3xl border border-[#2A2833]/10 shadow-sm relative group">
+            <div className="w-full max-w-md relative">
+              <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-[#5A4A7F]/20 via-transparent to-[#3F6B58]/20 blur-xl -z-10" />
+              <div className="bg-white/90 p-4 sm:p-5 rounded-[2rem] border border-white shadow-lift-lg relative group">
                 
                 {/* Photo Frame Container */}
-                <div className="relative aspect-4/5 rounded-2xl overflow-hidden bg-gradient-to-b from-[#F1EAE0] to-[#E7E0F4]/50 border border-[#2A2833]/10 flex flex-col items-center justify-center text-center p-6">
+                <div className="relative aspect-[4/5] rounded-[1.35rem] overflow-hidden bg-gradient-to-b from-[#F1EAE0] to-[#E7E0F4]/50 border border-[#2A2833]/10 flex flex-col items-center justify-center text-center p-6">
                   {profilePhotoUrl ? (
                     <img
                       src={profilePhotoUrl}
@@ -171,6 +172,22 @@ export const Hero: React.FC<HeroProps> = ({ profilePhotoUrl, onOpenAdmin, onSele
             </div>
           </div>
 
+        </div>
+
+        {/* Credibility strip: fast proof points before the visitor continues */}
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-px overflow-hidden rounded-2xl border border-[#2A2833]/10 bg-[#2A2833]/10 shadow-sm">
+          <div className="bg-white/85 px-5 py-5 sm:px-7 flex items-center gap-4">
+            <span className="font-serif-title text-4xl font-bold text-[#5A4A7F]">30+</span>
+            <span className="text-xs leading-relaxed text-[#2A2833]/70">años dedicados a educar y acompañar</span>
+          </div>
+          <div className="bg-white/85 px-5 py-5 sm:px-7 flex items-center gap-4">
+            <span className="font-serif-title text-4xl font-bold text-[#3F6B58]">3</span>
+            <span className="text-xs leading-relaxed text-[#2A2833]/70">países que forman parte de su trayectoria</span>
+          </div>
+          <div className="bg-white/85 px-5 py-5 sm:px-7 flex items-center gap-4">
+            <span className="font-serif-title text-4xl font-bold text-[#2A2833]">2</span>
+            <span className="text-xs leading-relaxed text-[#2A2833]/70">áreas de trabajo: docencia y orientación</span>
+          </div>
         </div>
       </div>
     </section>
