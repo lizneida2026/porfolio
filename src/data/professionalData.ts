@@ -3,11 +3,12 @@ import { EducationItem, ExperienceItem, RateItem, SiteSettings } from '../types'
 export const PROFESSIONAL_IDENTITY = {
   fullName: 'Lizneida Milagro Cordero Valero',
   professionalName: 'Lizneida Cordero',
-  mainHeadline: 'Educación, liderazgo y orientación de la conducta.',
-  motto: '«Experiencia que transforma. Conocimiento que acompaña».',
-  rolesSubtitle: 'Profesora de Matemáticas · Orientadora de Conducta · Profesional de la Educación y el Acompañamiento',
+  clinicName: 'Consultorio Virtual «Aprender a Desaprender»',
+  mainHeadline: 'Educación y orientación para volver a avanzar.',
+  motto: '«A veces no necesitas empezar de cero; necesitas aprender de otra manera».',
+  rolesSubtitle: 'Docencia matemática · Orientación personal · Acompañamiento online y presencial',
   presentationQuote:
-    '«A lo largo de mi trayectoria profesional he descubierto que educar y orientar tienen algo esencial en común: ayudar a las personas a desarrollar sus capacidades, superar dificultades y construir nuevas oportunidades».',
+    'Un espacio para soltar bloqueos, recuperar confianza y encontrar una forma más amable de avanzar.',
   location: 'Illescas, Toledo, España',
   email: 'lizmicorva@gmail.com',
   whatsappSuggestedMessage:

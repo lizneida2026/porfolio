@@ -12,10 +12,8 @@ export const Header: React.FC<HeaderProps> = ({ onOpenAdmin, onOpenCv, onSelectB
 
   const navLinks = [
     { label: 'Inicio', href: '#inicio' },
-    { label: 'Sobre mí', href: '#sobre-mi' },
-    { label: 'Docencia', href: '#docencia' },
-    { label: 'Orientación', href: '#orientacion' },
-    { label: 'Tarifas', href: '#tarifas' },
+    { label: 'Servicios', href: '#docencia' },
+    { label: 'Acompañamiento', href: '#orientacion' },
     { label: 'Contacto', href: '#contacto' },
   ];
 
@@ -45,8 +43,8 @@ export const Header: React.FC<HeaderProps> = ({ onOpenAdmin, onOpenCv, onSelectB
             <span className="font-serif-title text-2xl sm:text-3xl font-semibold tracking-tight text-[#2A2833] group-hover:text-[#5A4A7F] transition-colors">
               Lizneida Cordero
             </span>
-            <span className="text-[11px] font-medium tracking-wider uppercase text-[#3F6B58] -mt-1 hidden sm:block">
-              Educación & Orientación
+            <span className="text-[10px] font-semibold tracking-[.08em] uppercase text-[#3F6B58] -mt-1 hidden sm:block">
+              Aprender a Desaprender
             </span>
             </span>
           </a>
@@ -82,7 +80,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenAdmin, onOpenCv, onSelectB
               className="px-4 py-2.5 text-xs sm:text-sm font-semibold text-white bg-[#5A4A7F] hover:bg-[#483968] active:scale-[0.98] rounded-xl shadow-sm transition-all whitespace-nowrap shrink-0 flex items-center gap-1.5"
             >
               <Sparkles className="w-3.5 h-3.5 text-[#E7E0F4]" />
-              <span>1ª Sesión (15 min)</span>
+              <span>Empieza aquí</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
             </button>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { PROFESSIONAL_IDENTITY } from '../data/professionalData';
-import { ArrowDown, Calendar, Compass, GraduationCap, MapPin, Sparkles, Upload } from 'lucide-react';
+import { Calendar, Compass, GraduationCap, MapPin, Sparkles, ArrowRight, Brain, BookOpen, HeartHandshake } from 'lucide-react';
 
 interface HeroProps {
   profilePhotoUrl: string | null;
@@ -43,10 +43,10 @@ export const Hero: React.FC<HeroProps> = ({ profilePhotoUrl, onOpenAdmin, onSele
             {/* Main Headline */}
             <div className="space-y-4">
               <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#5A4A7F]">
-                {PROFESSIONAL_IDENTITY.mainHeadline}
+                {PROFESSIONAL_IDENTITY.clinicName}
               </span>
               <h1 className="font-serif-title text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-[#2A2833] leading-[.96] text-balance">
-                Educar con claridad.<br /><span className="text-[#5A4A7F] italic">Acompañar con propósito.</span>
+                ¿Sientes que estás dando vueltas<br /><span className="text-[#5A4A7F] italic">y no consigues avanzar?</span>
               </h1>
               <p className="text-base sm:text-lg font-medium text-[#5A4A7F] leading-snug">
                 {PROFESSIONAL_IDENTITY.rolesSubtitle}
@@ -59,14 +59,10 @@ export const Hero: React.FC<HeroProps> = ({ profilePhotoUrl, onOpenAdmin, onSele
             </p>
 
             {/* Presentation Quote (Exact as required) */}
-            <div className="bg-white/75 backdrop-blur-sm border border-white/80 rounded-2xl p-6 shadow-lift relative max-w-2xl">
+            <div className="bg-white/75 backdrop-blur-sm border border-white/80 rounded-2xl p-5 shadow-lift relative max-w-2xl">
               <p className="text-[#2A2833]/90 text-base sm:text-lg leading-relaxed italic">
                 {PROFESSIONAL_IDENTITY.presentationQuote}
               </p>
-              <div className="mt-3 flex items-center justify-between text-xs text-[#2A2833]/60 pt-2 border-t border-[#2A2833]/5">
-                <span>Lizneida M. Cordero Valero</span>
-                <span>UPEL (1993) · C.I.P.P.S.V. (2009)</span>
-              </div>
             </div>
 
             {/* CTAs: 2 main buttons as requested */}
@@ -76,7 +72,8 @@ export const Hero: React.FC<HeroProps> = ({ profilePhotoUrl, onOpenAdmin, onSele
                 className="px-6 py-3.5 text-sm sm:text-base font-semibold text-white bg-[#5A4A7F] hover:bg-[#483968] active:scale-[0.98] rounded-xl shadow-xs transition-all flex items-center justify-center gap-2 whitespace-nowrap"
               >
                 <Calendar className="w-4 h-4 text-[#E7E0F4]" />
-                <span>Solicita información sobre mis servicios</span>
+                <span>Cuéntame qué necesitas</span>
+                <ArrowRight className="w-4 h-4" />
               </button>
 
               <button
@@ -84,23 +81,29 @@ export const Hero: React.FC<HeroProps> = ({ profilePhotoUrl, onOpenAdmin, onSele
                 className="px-6 py-3.5 text-sm sm:text-base font-semibold text-[#2A2833] bg-white hover:bg-[#F1EAE0] border border-[#2A2833]/15 rounded-xl transition-all flex items-center justify-center gap-2 whitespace-nowrap"
               >
                 <GraduationCap className="w-4 h-4 text-[#3F6B58]" />
-                <span>Conoce mi trayectoria profesional</span>
+                <span>Conoce el método</span>
               </button>
             </div>
 
-            {/* Micro Pillars Strip */}
-            <div className="pt-4 grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs text-[#2A2833]/80">
-              <div className="bg-white/70 p-4 rounded-2xl border border-white/80 shadow-xs">
-                <span className="font-semibold text-[#5A4A7F] block text-sm">Docencia Matemática</span>
-                Primaria, secundaria y refuerzo lógico paso a paso.
-              </div>
-              <div className="bg-white/70 p-4 rounded-2xl border border-white/80 shadow-xs">
-                <span className="font-semibold text-[#3F6B58] block text-sm">Orientación Conductual</span>
-                Magíster acreditada: crecimiento, hábitos y adaptación.
-              </div>
-              <div className="bg-white/70 p-4 rounded-2xl border border-white/80 shadow-xs col-span-2 sm:col-span-1">
-                <span className="font-semibold text-[#2A2833] block text-sm">1ª Charla de 15 min</span>
-                Informativa y sin coste para valorar tu necesidad.
+            {/* Need-led choices */}
+            <div className="pt-3 space-y-3">
+              <p className="text-xs font-bold uppercase tracking-[.14em] text-[#2A2833]/55">Quizá hoy necesitas…</p>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-[#2A2833]/80">
+                <div className="bg-white/70 p-4 rounded-2xl border border-white/80 shadow-xs">
+                  <BookOpen className="w-5 h-5 text-[#5A4A7F] mb-2" />
+                  <span className="font-semibold text-[#5A4A7F] block text-sm">Entender mejor</span>
+                  Apoyo en Matemáticas, estudio y organización.
+                </div>
+                <div className="bg-white/70 p-4 rounded-2xl border border-white/80 shadow-xs">
+                  <Brain className="w-5 h-5 text-[#3F6B58] mb-2" />
+                  <span className="font-semibold text-[#3F6B58] block text-sm">Ordenarte por dentro</span>
+                  Hábitos, autoestima, estrés y decisiones.
+                </div>
+                <div className="bg-white/70 p-4 rounded-2xl border border-white/80 shadow-xs">
+                  <HeartHandshake className="w-5 h-5 text-[#2A2833] mb-2" />
+                  <span className="font-semibold text-[#2A2833] block text-sm">Volver a confiar</span>
+                  Acompañamiento cercano para tu siguiente paso.
+                </div>
               </div>
             </div>
 
@@ -122,34 +125,24 @@ export const Hero: React.FC<HeroProps> = ({ profilePhotoUrl, onOpenAdmin, onSele
                       referrerPolicy="no-referrer"
                     />
                   ) : (
-                    <div className="flex flex-col items-center justify-center space-y-4 max-w-xs">
-                      {/* Monogram Seal */}
-                      <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#5A4A7F] to-[#3F6B58] text-[#FAF6F0] flex items-center justify-center shadow-inner">
-                        <span className="font-serif-title text-4xl font-semibold tracking-wider">
-                          LC
-                        </span>
-                      </div>
-
-                      <div className="space-y-1">
-                        <h2 className="font-serif-title text-2xl font-bold text-[#2A2833]">
-                          Lizneida Cordero
+                    <div className="relative w-full h-full -m-6 flex flex-col items-center justify-end p-6 overflow-hidden">
+                      <img
+                        src="/src/assets/images/counseling_space_warm_1793792997156.jpg"
+                        alt="Espacio cálido del Consultorio Virtual Aprender a Desaprender"
+                        className="absolute inset-0 w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#2A2833]/90 via-[#2A2833]/20 to-transparent" />
+                      <div className="relative z-10 text-left w-full space-y-2">
+                        <div className="w-16 h-16 rounded-full bg-white/90 text-[#5A4A7F] flex items-center justify-center shadow-inner">
+                          <span className="font-serif-title text-3xl font-semibold tracking-wider">LC</span>
+                        </div>
+                        <h2 className="font-serif-title text-2xl font-bold text-white">
+                          Aprender a Desaprender
                         </h2>
-                        <p className="text-xs text-[#2A2833]/70 font-medium">
-                          Espacio reservado para fotografía profesional
+                        <p className="text-xs text-white/80 font-medium">
+                          Un espacio para comprenderte y avanzar.
                         </p>
                       </div>
-
-                      <p className="text-[11px] text-[#2A2833]/60 leading-relaxed px-2">
-                        Reservado para la incorporación de la fotografía oficial facilitada por Lizneida. Puedes cargarla en cualquier momento desde el panel de gestión.
-                      </p>
-
-                      <button
-                        onClick={onOpenAdmin}
-                        className="mt-2 text-xs font-semibold text-[#5A4A7F] hover:text-[#483968] bg-[#E7E0F4] hover:bg-[#d8cde9] px-3.5 py-1.5 rounded-lg transition-colors inline-flex items-center gap-1.5"
-                      >
-                        <Upload className="w-3.5 h-3.5" />
-                        <span>Subir fotografía oficial</span>
-                      </button>
                     </div>
                   )}
 

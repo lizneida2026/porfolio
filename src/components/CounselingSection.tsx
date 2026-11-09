@@ -66,10 +66,10 @@ export const CounselingSection: React.FC<CounselingSectionProps> = ({ onSelectBo
               <span>Orientación de la Conducta & Acompañamiento Personal</span>
             </div>
             <h2 className="font-serif-title text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight text-balance">
-              Un espacio cálido y seguro para comprenderte, ordenar tus prioridades y avanzar
+              Deja de sobrevivir en automático. Empieza a comprenderte.
             </h2>
             <p className="text-white/75 text-base sm:text-lg leading-relaxed">
-              Basado en mi formación de <strong>Magíster en Ciencias, mención Orientación de la Conducta</strong> (C.I.P.P.S.V., Caracas, 2009), ofrezco un acompañamiento humano y estructurado enfocado en potenciar tus recursos personales y encontrar claridad en momentos de cambio.
+              Cuando sabes qué te bloquea, puedes empezar a elegir de otra manera. Te acompaño a ordenar emociones, hábitos y decisiones con pasos concretos.
             </p>
           </div>
 

@@ -20,10 +20,10 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAdmin, onOpenCv }) => {
           {/* Brand & Identity (5 cols) */}
           <div className="lg:col-span-5 space-y-4">
             <span className="font-serif-title text-3xl font-bold tracking-tight text-white block">
-              Lizneida Cordero
+              Aprender a Desaprender
             </span>
             <p className="text-xs sm:text-sm font-medium text-[#E7E0F4]/90">
-              {PROFESSIONAL_IDENTITY.mainHeadline}
+              {PROFESSIONAL_IDENTITY.clinicName}
             </p>
             <p className="font-serif-title text-base italic text-[#DCEAE2]/90">
               {PROFESSIONAL_IDENTITY.motto}

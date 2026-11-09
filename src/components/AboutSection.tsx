@@ -20,10 +20,10 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenCv }) => {
             <span>Vocación, rigor pedagógico y cercanía</span>
           </div>
           <h2 className="font-serif-title text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2A2833] tracking-tight text-balance">
-            Más de dos décadas impulsando el aprendizaje y el bienestar humano
+            Experiencia para ayudarte a avanzar con más claridad
           </h2>
           <p className="text-[#2A2833]/80 text-base sm:text-lg leading-relaxed">
-            Mi carrera profesional se ha forjado en la intersección entre la precisión matemática, la didáctica escolar y la comprensión profunda de la conducta humana. He tenido el privilegio de educar y orientar a estudiantes, familias y equipos en Venezuela, República Dominicana y Estados Unidos, y hoy desarrollo mi actividad desde Illescas (Toledo), tanto de manera presencial como a través de la atención online.
+            Soy Lizneida Cordero, profesora de Matemáticas y orientadora de la conducta. Acompaño a estudiantes, familias y adultos desde Illescas y online, con una mirada práctica, cercana y respetuosa.
           </p>
         </div>
 

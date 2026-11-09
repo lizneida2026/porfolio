@@ -95,10 +95,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
             <span>Atención cercana</span>
           </div>
           <h2 className="font-serif-title text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2A2833] tracking-tight text-balance">
-            Demos el primer paso: solicita información o concierta tu sesión
+            ¿Qué necesitas aprender, soltar o volver a intentar?
           </h2>
           <p className="text-sm sm:text-base text-[#2A2833]/80 leading-relaxed">
-            Puedes escribirme mediante el formulario, enviarme un correo electrónico o pulsar el botón de WhatsApp para una respuesta ágil. Estaré encantada de conocer tu caso y buscar la mejor solución.
+            Cuéntame brevemente qué estás viviendo y te orientaré sobre el siguiente paso.
           </p>
         </div>
 

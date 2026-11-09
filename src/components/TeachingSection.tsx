@@ -47,10 +47,10 @@ export const TeachingSection: React.FC<TeachingSectionProps> = ({ onSelectBookin
               <span>Docencia & Gestión Educativa</span>
             </div>
             <h2 className="font-serif-title text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2A2833] tracking-tight text-balance">
-              Didáctica matemática que construye confianza y despierta el pensamiento lógico
+              Aprende Matemáticas sin miedo y recupera la confianza
             </h2>
             <p className="text-[#2A2833]/80 text-base sm:text-lg leading-relaxed">
-              Las matemáticas no deben ser una fuente de angustia. Desde mi formación en la Universidad Pedagógica Experimental Libertador (1993) y mi trayectoria en centros educativos de tres países, facilito un aprendizaje gradual, riguroso y humano que transforma la inseguridad en destreza y solidez.
+              Si te cuesta entender, organizarte o mantener la motivación, trabajamos paso a paso hasta que vuelvas a sentir que puedes.
             </p>
           </div>
 

@@ -30,7 +30,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ rates, onSelectB
               <span>Tarifas orientativas</span>
             </div>
             <h2 className="font-serif-title text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2A2833] tracking-tight">
-              Precios claros, honestos y accesibles
+              Elige la forma de avanzar que necesitas
             </h2>
             <p className="text-sm sm:text-base text-[#2A2833]/80 leading-relaxed">
               Todos los precios detallados a continuación son orientativos y transparentes. La primera conversación de 15 minutos es completamente gratuita y sin compromiso para conocernos y valorar tus necesidades.
