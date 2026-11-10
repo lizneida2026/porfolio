@@ -1,6 +1,7 @@
 import React from 'react';
 import { PROFESSIONAL_IDENTITY } from '../data/professionalData';
 import { Calendar, Compass, GraduationCap, MapPin, Sparkles, ArrowRight, Brain, BookOpen, HeartHandshake } from 'lucide-react';
+import counselingSpaceImage from '../assets/images/counseling_space_warm_1793792997156.jpg';
 
 interface HeroProps {
   profilePhotoUrl: string | null;
@@ -46,10 +47,10 @@ export const Hero: React.FC<HeroProps> = ({ profilePhotoUrl, onOpenAdmin, onSele
                 {PROFESSIONAL_IDENTITY.clinicName}
               </span>
               <h1 className="font-serif-title text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-[#2A2833] leading-[.96] text-balance">
-                ¿Sientes que estás dando vueltas<br /><span className="text-[#5A4A7F] italic">y no consigues avanzar?</span>
+                <span className="text-[#B33A3A]">Educar con claridad.</span><br /><span className="text-[#5A4A7F] italic">Acompañar con propósito.</span>
               </h1>
               <p className="text-base sm:text-lg font-medium text-[#5A4A7F] leading-snug">
-                {PROFESSIONAL_IDENTITY.rolesSubtitle}
+                ¿Sientes que estás dando vueltas y no consigues avanzar? {PROFESSIONAL_IDENTITY.rolesSubtitle}
               </p>
             </div>
 
@@ -127,7 +128,7 @@ export const Hero: React.FC<HeroProps> = ({ profilePhotoUrl, onOpenAdmin, onSele
                   ) : (
                     <div className="relative w-full h-full -m-6 flex flex-col items-center justify-end p-6 overflow-hidden">
                       <img
-                        src="/src/assets/images/counseling_space_warm_1793792997156.jpg"
+                        src={counselingSpaceImage}
                         alt="Espacio cálido del Consultorio Virtual Aprender a Desaprender"
                         className="absolute inset-0 w-full h-full object-cover"
                       />

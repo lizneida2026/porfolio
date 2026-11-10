@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heart, ShieldCheck, Sparkles, UserCheck, Users, Sun, Compass, Brain, Feather, ArrowRight } from 'lucide-react';
+import counselingSpaceImage from '../assets/images/counseling_space_warm_1793792997156.jpg';
 
 interface CounselingSectionProps {
   onSelectBooking: (serviceId?: string) => void;
@@ -94,7 +95,7 @@ export const CounselingSection: React.FC<CounselingSectionProps> = ({ onSelectBo
           
           <div className="lg:col-span-6 relative aspect-16/10 rounded-2xl overflow-hidden border border-[#2A2833]/10 order-2 lg:order-1">
             <img
-              src="/src/assets/images/counseling_space_warm_1793792997156.jpg"
+              src={counselingSpaceImage}
               alt="Ambiente acogedor y sereno de orientación y consulta personal"
               className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               referrerPolicy="no-referrer"

@@ -1,5 +1,6 @@
 import React from 'react';
 import { BookOpen, Calculator, CalendarCheck, Check, Compass, School, Users } from 'lucide-react';
+import teachingEnvironmentImage from '../assets/images/teaching_environment_math_1793792997421.jpg';
 
 interface TeachingSectionProps {
   onSelectBooking: (serviceId?: string) => void;
@@ -107,7 +108,7 @@ export const TeachingSection: React.FC<TeachingSectionProps> = ({ onSelectBookin
 
           <div className="lg:col-span-6 relative aspect-16/10 rounded-2xl overflow-hidden border border-[#2A2833]/10">
             <img
-              src="/src/assets/images/teaching_environment_math_1793792997421.jpg"
+              src={teachingEnvironmentImage}
               alt="Mesa de estudio y material didáctico para docencia de matemáticas"
               className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               referrerPolicy="no-referrer"
